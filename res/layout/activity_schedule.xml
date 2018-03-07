@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ScheduleActivity"
+    android:background="@color/darkblue" 
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/lblDisconnectTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Set the disconnection time"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:layout_weight="0.2" /> 
+
+    <TimePicker
+        android:id="@+id/timePickerDisconnection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/bluegrey"
+
+       />
+
+    <TextView
+        android:id="@+id/lblReconnectTime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_marginTop="24dp"
+        android:text="Set the reconnection time"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <TimePicker
+        android:id="@+id/timePickerConnection"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_alignLeft="@+id/timePickerDisconnection"
+        android:layout_below="@+id/lblReconnectTime"
+        android:background="@color/bluegrey" 
+        />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <Button
+        android:id="@+id/btnAllset"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="All set" />
+
+    <Button
+        android:id="@+id/btnDisableSchedule"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:text="Disable \nschedule" />
+
+</LinearLayout>
+
+</LinearLayout>

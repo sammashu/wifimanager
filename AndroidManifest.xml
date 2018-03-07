@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tpandroid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+	<permission android:name="com.example.tpandroid.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+	<uses-permission android:name="com.example.tpandroid.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />  
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.example.tpandroid.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.AvailableNetworkActivity"
+            android:label="@string/title_activity_available_network" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.ShowAvailableNetworkActivity"
+            android:label="@string/title_activity_show_available_network" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.ScheduleActivity"
+            android:label="@string/title_activity_schedule" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.HelpActivity"
+            android:label="@string/title_activity_help" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.example.tpandroid.ContactUsActivity"
+            android:label="@string/title_activity_contact_us" 
+            android:screenOrientation="portrait">
+        </activity>
+        <activity 
+            android:name="com.example.tpandroid.MapGoogleActivity" 
+            android:screenOrientation="portrait">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyBDKun8VGXG4PC2h0xiN822gYbhqDJDTUo" />
+        
+        <service android:enabled="true" android:name=".BroadWifiService" />
+        <service android:enabled="true" android:name=".CheckFrequencyService" />
+        <service android:enabled="true" android:name=".ScheduleService" />
+        
+    </application>
+
+</manifest>

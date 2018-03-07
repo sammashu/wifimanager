@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">TPAndroid</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="darkblue">#000033</color>
+    <color name="bluegrey">#6699CC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <string name="title_activity_available_network">AvailableNetworkActivity</string>
+    <string name="title_activity_show_available_network">ShowAvailableNetworkActivity</string>
+    <string name="title_activity_schedule">ScheduleActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_contact_us">ContactUsActivity</string>
+    
+    
+</resources>

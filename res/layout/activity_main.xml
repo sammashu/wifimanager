@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/darkblue"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp" 
+        android:layout_weight="1"
+        >
+
+        <Button
+            android:id="@+id/btnAvailable"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Available network" 
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            />
+
+        <Button
+            android:id="@+id/btnMap"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.38"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/btnShow"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Show network"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical" 
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/btnCheckFrequency"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Check frequency"
+            android:layout_weight="1" 
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Schedule to desactivate"
+            android:layout_weight="1" 
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnDisconnectionTimeout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:text="Disconnection timeout"
+            android:layout_weight="1" 
+            android:textColor="@color/white"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <ToggleButton
+                android:id="@+id/toggleButtonOnOff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="ToggleButton"
+                android:textColor="@color/white"
+                android:textOff="OFF"
+                android:textOn="ON" />
+
+            <Button
+                android:id="@+id/btnHelp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="14dp"
+                android:background="@drawable/help"
+                android:textColor="@color/white" />
+
+            <CheckBox
+                android:id="@+id/chkNotification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/btnHelp"
+                android:layout_marginLeft="23dp"
+                android:layout_toRightOf="@+id/btnHelp"
+                android:gravity="center_vertical|center_horizontal|center|start"
+                android:text="Show notification"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

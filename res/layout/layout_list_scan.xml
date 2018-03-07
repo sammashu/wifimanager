@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/lblSsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="SSID:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtSsId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSsId"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lblBssId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSsId"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="BSSID:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtBssId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBssId"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lblCapabilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtBssId"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="Capabilities:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtCapabilities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblCapabilities"
+        android:paddingLeft="10dp"
+        android:paddingTop="2dp"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/lbllevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:paddingTop="2dp"
+        android:text="LEVEL:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/txtlevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lbllevel"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="2dp"
+        android:text="" />
+
+     <TextView
+         android:id="@+id/lblfrequency"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/txtlevel"
+         android:layout_alignParentRight="true"
+         android:paddingRight="10dp"
+         android:paddingTop="2dp"
+         android:text="Frequency:"
+         android:textSize="12sp" />
+
+     <TextView
+         android:id="@+id/txtfrequency"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/lblBssId"
+         android:layout_alignParentRight="true"
+          android:paddingRight="10dp"
+         android:paddingTop="2dp"
+         android:text="" />
+
+</RelativeLayout>

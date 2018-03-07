@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+	<item android:id="@+id/USA" android:title="English" android:icon="@drawable/canada"/>
+	<item android:id="@+id/French" android:title="Français" android:icon="@drawable/spain_flag"/>
+</menu>
